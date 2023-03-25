@@ -1,16 +1,17 @@
 #include <stdio.h>
+
 /**
-  *main - variables
-  *Description: "numbers"
-  *Return: always 0
-  */
+ * main - prints the lowercase alphabet in reverse,
+ * followed by a new line
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int n;
+	char ch;
 
-	for(n = 0; n <= 9; n++)
+	for (ch = 'z'; ch >= 'a'; ch--)
 	{
-		putchar(n + 48);
+		putchar(ch);
 	}
 	putchar('\n');
 	return (0);
